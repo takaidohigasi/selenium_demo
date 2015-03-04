@@ -1,5 +1,5 @@
 class Player
   def play_turn(warrior)
-    warrior_walk!
+    warrior.walk!
   end
 end
