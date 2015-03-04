@@ -8,6 +8,9 @@ Selenium Web Driverの使い方のデモを行う為のレポジトリです
  - rubygems
  - bundler
 
+※ chromeブラウザで動かすChrome Driverを使う場合は別途インストールが必要
+https://code.google.com/p/selenium/wiki/ChromeDriver
+
 # Setup
 
 ```
@@ -22,5 +25,12 @@ $ bundle install --path=vendor/bundle
 # Sample
 
 ```
+# level 1 〜 level 9をクリアする
 $ bundle exec ruby bin/ruby_warrior_demo.rb
+
+# チートしてlevel 9をクリアする
+$ bundle exec ruby bin/ruby_warrior_cheat_clear.rb
+
+# capybaraのサンプル
+$ bundle exec rspec spec/capybara_sample_spec.rb
 ```
