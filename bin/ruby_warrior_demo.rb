@@ -28,7 +28,7 @@ def accomplish_mission_for_the_level(level, driver)
   3.times { |_| driver.find_element(class: 'ace_text-input').clear }
   driver.find_element(class: 'ace_text-input').clear
 
-  file_to_load = "answer_code/level%02d.txt" % level
+  file_to_load = "answer_code/level%02d.rb" % level
 
   # (3) input answer which is prepared as text in advance.
 

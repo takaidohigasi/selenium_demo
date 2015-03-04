@@ -45,7 +45,7 @@ begin
   puts 'clearing text...'
   3.times { |_| driver.find_element(class: 'ace_text-input').clear }
   driver.find_element(class: 'ace_text-input').clear
-  code = File.read("answer_code/level%02d.txt" % FINAL_LEVEL, :encoding => Encoding::UTF_8)
+  code = File.read("answer_code/level%02d.rb" % FINAL_LEVEL, :encoding => Encoding::UTF_8)
   # input code as oneliner (so don't use # in the code)
   driver.find_element(class: 'ace_text-input').send_keys(code.gsub(/\n/, ';'))
   driver.find_element(class: 'ace_text-input').send_keys(:return)
