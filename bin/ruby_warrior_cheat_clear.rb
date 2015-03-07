@@ -5,7 +5,8 @@ require 'selenium-webdriver'
 # @see http://www.seleniumhq.org/
 # @see https://code.google.com/p/selenium/wiki/RubyBindings
 
-# :firefox, :firefox(need to intall), :ie(need to install), :safari
+# :firefox, :chrome(need to intall), :ie(need to install), :safari
+# https://code.google.com/p/selenium/wiki/ChromeDriver
 BROWSER  = :chrome
 USERNAME = 'taka-h'
 FINAL_LEVEL = 9
