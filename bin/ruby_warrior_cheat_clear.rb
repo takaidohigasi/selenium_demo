@@ -63,5 +63,5 @@ rescue => ex
   driver.save_screenshot('evidence.png')
 ensure
   quit
-  #driver.quit
+  driver.quit
 end
