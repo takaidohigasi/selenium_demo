@@ -79,7 +79,7 @@ begin
 
   (1..FINAL_LEVEL).each { |level| accomplish_mission_for_the_level(level, driver) }
 
-  sleep 60
+  sleep 180
   driver.save_screenshot('success-evidence.png')
 rescue => ex
   p ex, ex.backtrace

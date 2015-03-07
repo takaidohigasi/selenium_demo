@@ -53,7 +53,7 @@ begin
   # click run code button
   driver.find_element(class: 'run-code').click
   puts 'waiting for code execution to finish...'
-  sleep 60
+  sleep 180
 
   driver.save_screenshot('success-evidence.png')
 rescue => ex
@@ -61,6 +61,6 @@ rescue => ex
   # this sometimes also does't work well
   driver.save_screenshot('evidence.png')
 ensure
-  # quit
+  quit
   #driver.quit
 end
