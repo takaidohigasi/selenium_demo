@@ -13,7 +13,7 @@ class Player
       warrior.rescue!(direction)
       @backward_completed = true
     elsif space.empty?
-      if warrior.health < MAX_HEALTH * 0.5 && under_attack?(warrior)
+      if (warrior.health < MAX_HEALTH * 0.5) && under_attack?(warrior)
         warrior.walk!(( direction == :forward ) ? :backward : :forward)
       elsif (warrior.health < MAX_HEALTH * 0.9) && !under_attack?(warrior)
         warrior.rest!

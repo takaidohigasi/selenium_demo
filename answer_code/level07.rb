@@ -11,16 +11,15 @@ class Player
       warrior.pivot!
       @backward_completed = true
     elsif space.enemy?
-      if warrior.health < MAX_HEALTH * 0.5 && under_attack?(warrior)
+      if (warrior.health < MAX_HEALTH * 0.5) && under_attack?(warrior)
         retreat(warrior, direction)
       else
         warrior.attack!(direction)
       end
     elsif space.captive?
       warrior.rescue!(direction)
-      @backward_completed = true
     elsif space.empty?
-      if warrior.health < MAX_HEALTH * 0.5 && under_attack?(warrior)
+      if (warrior.health < MAX_HEALTH * 0.5) && under_attack?(warrior)
         retreat(warrior, direction)
       elsif (warrior.health < MAX_HEALTH * 0.9) && !under_attack?(warrior)
         warrior.rest!
